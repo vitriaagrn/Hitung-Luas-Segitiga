@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hitung Luas Segitiga</string>
+    <string name="rumus">Segitiga merupakan bangun datar yang dibatasi dengan
+        adanya tiga buah sisi serta memiliki tiga buah titik sudut. Adapun
+        Rumus Luas segitiga = 1/2 * Alas * Tinggi</string>
+    <string name="alas">Alas Segitiga (cm)</string>
+    <string name="tinggi_segitiga">Tinggi Segitiga (cm)</string>
+    <string name="hitung_luas">Hitung Luas</string>
+    <string name="reset">Reset Halaman</string>
+    <string name="hasil_luas">Luas Segitiga: %1$d</string>
+</resources>
