@@ -7,5 +7,26 @@
     <string name="tinggi_segitiga">Tinggi Segitiga (cm)</string>
     <string name="hitung_luas">Hitung Luas</string>
     <string name="reset">Reset Halaman</string>
-    <string name="hasil_luas">Luas Segitiga: %1$d</string>
+    <string name="hasil_luas">Luas Segitiga: %1$.2f</string>
+    <string name="alas_invalid">Alas Segitiga Harus Diisi!</string>
+    <string name="tinggi_invalid">Tinggi Segitiga Harus Diisi!</string>
+    <string name="kategori_segitiga">Kategori: %1$s</string>
+    <string name="kecil">Segitiga Kecil</string>
+    <string name="sedang">Segitiga Sedang</string>
+    <string name="besar">Segitiga Besar</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Hitung Luas segitiga merupakan sebuah aplikasi
+        untuk menghitung luas dari segitiga\n\Copyright © 2022
+        Vitria Anggraeni.\nAll rights reserved.</string>
+    <string name="tulisan_tinggi">Tinggi : %1$.2f cm</string>
+    <string name="tulisan_alas">Alas : %1$.2f cm</string>
+    <string name="tulisan_luas">Luas : %1$s cm^2</string>
+    <string name="data_invalid">Tidak Ada Data</string>
+    <string name="dialog_hapus">Yakin Anda Ingin Menghapus Data?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="gambar_segitiga">Segitiga Kecil</string>
+    <string name="desc_segitiga">Kategori Segitiga Anda yaitu Segitiga Kecil</string>
+    <string name="desc_segitiga_sedang">Kategori Segitiga Anda yaitu Segitiga Sedang</string>
+    <string name="desc_segitiga_besar">Kategori Segitiga Anda yaitu Segitiga Besar</string>
 </resources>
