@@ -16,16 +16,16 @@
             android:id="@+id/action_hitungLuas_to_aboutFragment"
             app:destination="@id/aboutFragment" />
         <action
-            android:id="@+id/action_HitungLuas_to_historiFragment2"
+            android:id="@+id/action_hitungLuas_to_historiFragment2"
             app:destination="@id/historiFragment2" />
         <action
-            android:id="@+id/action_hitungFragment_to_segitigaFragment"
+            android:id="@+id/action_hitungLuas_to_segitigaFragment"
             app:destination="@id/segitigaFragment"/>
     </fragment>
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="org.d3if2048.hitungsegitiga.ui.AboutFragment"
+        android:name="org.d3if2048.hitungsegitiga.ui.about.AboutFragment"
         android:label="@string/tentang_aplikasi"
         tools:layout="@layout/fragment_about" />
     <fragment
@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_histori"/>
     <fragment
         android:id="@+id/segitigaFragment"
-        android:name="org.d3if2048.hitungsegitiga.ui.SegitigaFragment"
+        android:name="org.d3if2048.hitungsegitiga.ui.segitiga.SegitigaFragment"
         tools:layout="@layout/fragment_lihat_gambar">
     <argument
         android:name="kategori"

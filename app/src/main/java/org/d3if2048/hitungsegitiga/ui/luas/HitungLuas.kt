@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -45,7 +46,7 @@ class HitungLuas: Fragment() {
                 true
             }
             R.id.histori_menu -> {
-                findNavController().navigate(R.id.action_HitungLuas_to_historiFragment2)
+                findNavController().navigate(R.id.action_hitungLuas_to_historiFragment2)
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -120,11 +121,17 @@ class HitungLuas: Fragment() {
     }
 
     private fun setupObserveres() {
-        viewModel.getNavigasi().observe(viewLifecycleOwner, {
-            if(it == null) return@observe
-            findNavController().navigate(HitungLuasDirections.actionHitungFragmentToSegitigaFragment(it))
+        viewModel.getNavigasi().observe(viewLifecycleOwner) {
+            if (it == null) return@observe
+            findNavController().navigate(HitungLuasDirections.actionHitungLuasToSegitigaFragment(it))
             viewModel.selesaiNavigasi()
-        })
+        }
         viewModel.getHasilLuas().observe(requireActivity(), { showResult(it) })
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("Notifikasi", "Method onDestroy dijalankan!")
+        viewModel.scheduleUpdater(requireActivity().application)
     }
 }

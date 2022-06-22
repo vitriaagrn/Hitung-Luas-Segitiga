@@ -24,4 +24,12 @@
         android:gravity="center_horizontal"
         android:textSize="18sp"
         android:text="@string/gambar_segitiga" />
+
+    <ProgressBar
+        android:id="@+id/progressGambar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
 </LinearLayout>

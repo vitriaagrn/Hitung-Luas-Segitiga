@@ -1,5 +1,6 @@
-package org.d3if2048.hitungsegitiga.ui
+package org.d3if2048.hitungsegitiga.ui.segitiga
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +8,11 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import org.d3if2048.hitungsegitiga.R
 import org.d3if2048.hitungsegitiga.databinding.FragmentLihatGambarBinding
 import org.d3if2048.hitungsegitiga.model.KategoriLuas
+import org.d3if2048.hitungsegitiga.util.Gambar
 
 class SegitigaFragment : Fragment() {
 
@@ -22,18 +25,23 @@ class SegitigaFragment : Fragment() {
     }
 
     private fun updateUI (kategori: KategoriLuas) {
-        val actionBar = (requireActivity() as AppCompatActivity).supportActionBar
         when (kategori) {
             KategoriLuas.KECIL -> {
-                binding.imageView.setImageResource(R.drawable.segitiga_kecil)
+                Glide.with(requireActivity())
+                    .load(Uri.parse(Gambar.segitiga3))
+                    .into(binding.imageView)
                 binding.textView.text = getString(R.string.desc_segitiga)
             }
             KategoriLuas.SEDANG -> {
-                binding.imageView.setImageResource(R.drawable.segitiga_sedang)
+                Glide.with(requireActivity())
+                    .load(Uri.parse(Gambar.segitiga2))
+                    .into(binding.imageView)
                 binding.textView.text = getString(R.string.desc_segitiga_sedang)
             }
             KategoriLuas.BESAR -> {
-                binding.imageView.setImageResource(R.drawable.segitiga_besar)
+                Glide.with(requireActivity())
+                    .load(Uri.parse(Gambar.segitiga1))
+                    .into(binding.imageView)
                 binding.textView.text = getString(R.string.desc_segitiga_besar)
             }
         }
